@@ -3,6 +3,8 @@
 This project uses the **Teclo-Customer-Churn** dataset to train a machine learning classification model that predicts whether a customer is likely to churn.
 Trained model is then used to make new predictions on newly generated customers stored in a database.
 
+This project is a learning exercise on end-to-end ML pipeline.
+
 ---
 
 ## Project Overview
@@ -47,3 +49,4 @@ Trained model is then used to make new predictions on newly generated customers 
 
 - test other models and compare results
 - work on accuracy
+
