@@ -1,34 +1,49 @@
-This project focuses around Teclo-Customer-Churn data.
-I trained a model after preprocessing said data, and created my own database where I add random customers.
-I use the trained model to then try to predict if these customers would churn or not.
+# Telco Customer Churn Prediction
 
+This project uses the **Teclo-Customer-Churn** dataset to train a machine learning classification model that predicts whether a customer is likely to churn.
+Trained model is then used to make new predictions on newly generated customers stored in a database.
 
-MODEL:
+---
 
-Classification Report:
-              precision    recall  f1-score   support
+## Project Overview
 
-         0.0       0.91      0.77      0.83      1036
-         1.0       0.55      0.79      0.65       373
+- Preprocessed the dataset
+- trained a model
+- created a database and customer generator
+- used the trained model on generated customers
 
-    accuracy                           0.77      1409
-   macro avg       0.73      0.78      0.74      1409
-weighted avg       0.81      0.77      0.78      1409
+---
 
-Confusion Matrix:
+## Model Performance
+
+- ⚠️ Model performance is still a work in progress.
+
+| Class | Precision | Recall | F1-Score | Support |
+|------|----------|--------|---------|---------|
+| 0 (No Churn) | 0.91 | 0.77 | 0.83 | 1036 |
+| 1 (Churn) | 0.55 | 0.79 | 0.65 | 373 |
+
+**Accuracy:** 0.77  
+**Macro Avg F1:** 0.74  
+**Weighted Avg F1:** 0.78  
+
+### Confusion Matrix
 [[798 238]
  [ 80 293]]
 
- Next steps for this project would be to try and improve these results, to hopefully improve the model accuracy.
+---
 
- HOW TO USE
+## Installation & Setup
 
- python -m venv venv
- venv\Scripts\activate
+- python -m venv venv
+- venv\Scripts\activate
+- pip install -r requirements.txt
+- python database/init_db.py
+- python main.py
 
- pip install -r requirements.txt
+---
 
- python database/init_db.py
+### TODO
 
- python main.py
-
+- test other models and compare results
+- work on accuracy
