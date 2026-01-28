@@ -42,3 +42,5 @@ def initialize_db():
         db.cursor.execute(customer_query)
         db.cursor.execute(prediction_query)
         db.commit()
+
+initialize_db()
