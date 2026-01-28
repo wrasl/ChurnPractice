@@ -1,4 +1,4 @@
-This project focused around Teclo-Customer-Churn data.
+This project focuses around Teclo-Customer-Churn data.
 I trained a model after preprocessing said data, and created my own database where I add random customers.
 I use the trained model to then try to predict if these customers would churn or not.
 
@@ -29,4 +29,5 @@ weighted avg       0.81      0.77      0.78      1409
  pip install -r requirements.txt
 
  python database/init_db()
+
  python main.py
