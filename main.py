@@ -38,10 +38,3 @@ if __name__ == "__main__":
 
     csv_filename = f"data/predictions/predictions-{datetime.now().strftime('%Y%m%d-%H%M%S')}.csv"
     results.to_csv(csv_filename, index=False)
-
-"""
-if __name__ == "__main__":
-    df = generate_customers(n=30)
-    db = CustomerDB()
-    save_customers(db, df)
-"""
