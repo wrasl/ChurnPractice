@@ -1,2 +1,6 @@
 customers.db
 __pycache__/
+venv/
+prediction.log
+data/customers
+data/predictions
