@@ -5,7 +5,7 @@ I use the trained model to then try to predict if these customers would churn or
 
 MODEL:
 
-2026-01-28 18:18:15,596 [INFO] Classification Report:
+Classification Report:
               precision    recall  f1-score   support
 
          0.0       0.91      0.77      0.83      1036
@@ -15,7 +15,7 @@ MODEL:
    macro avg       0.73      0.78      0.74      1409
 weighted avg       0.81      0.77      0.78      1409
 
-2026-01-28 18:18:15,621 [INFO] Confusion Matrix:
+Confusion Matrix:
 [[798 238]
  [ 80 293]]
 
@@ -28,6 +28,7 @@ weighted avg       0.81      0.77      0.78      1409
 
  pip install -r requirements.txt
 
- python database/init_db()
+ python database/init_db.py
 
  python main.py
+
